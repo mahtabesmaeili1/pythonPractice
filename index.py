@@ -59,3 +59,12 @@ def add_numbers_greater_than_or_equal_to_10(numbers):
 numbers = [5, 10, 15, 20, 25]
 total = add_numbers_greater_than_or_equal_to_10(numbers)
 print("The total of all numbers greater than or equal to 10 is:", total)
+
+
+#Write a function that will show the inverse version of a given string. Example: given string "hola" reverse string "aloh".
+def reverse_string(string):
+    return string[::-1]
+string = "mahtab"
+
+inverse_string = reverse_string(string)
+print("The inverse version of the string is:", inverse_string)
