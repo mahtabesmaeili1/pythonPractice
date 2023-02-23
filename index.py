@@ -37,3 +37,14 @@ def add_numbers(*args):
     print("The total is:", total)
 
 add_numbers(2, 4)
+
+
+#write a program that ask for the name of a patient and also asks the age, then it will calculate the age of a person and display a message "the Patient " + Name + " is of age." or " is underage."
+
+name = input("Please enter the patient's name: ")
+age = int(input("Please enter the patient's age: "))
+#We use the int() function to convert the age input to an integer
+if age >= 18:
+    print("The patient " + name + " is of age.")
+else:
+    print("The patient " + name + " is underage.")
