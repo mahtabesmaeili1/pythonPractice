@@ -43,8 +43,19 @@ add_numbers(2, 4)
 
 name = input("Please enter the patient's name: ")
 age = int(input("Please enter the patient's age: "))
-#We use the int() function to convert the age input to an integer
+# #We use the int() function to convert the age input to an integer
 if age >= 18:
     print("The patient " + name + " is of age.")
 else:
     print("The patient " + name + " is underage.")
+
+    #Write a function that will add all numbers greater or equal to 10 from a list of numbers
+def add_numbers_greater_than_or_equal_to_10(numbers):
+     total = 0
+     for num in numbers:
+        if num >= 10:
+            total += num
+     return total
+numbers = [5, 10, 15, 20, 25]
+total = add_numbers_greater_than_or_equal_to_10(numbers)
+print("The total of all numbers greater than or equal to 10 is:", total)
