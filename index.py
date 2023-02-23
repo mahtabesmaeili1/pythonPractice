@@ -114,3 +114,22 @@ def remove_duplicates(numbers):
 numbers = [1, 1, 1, 2, 2, 3, 3, 5, 6]
 unique_numbers = remove_duplicates(numbers)
 print(unique_numbers)
+
+
+#Write a function that given a list of numbers, it will generate two new lists of numbers, one with the odd numbers and one with the even numbers
+
+def separate_odd_even(numbers):
+    odd_numbers = []
+    even_numbers = []
+    for number in numbers:
+        if number % 2 == 0:
+            even_numbers.append(number)
+        else:
+            odd_numbers.append(number)
+    return odd_numbers, even_numbers
+
+numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+odd_numbers, even_numbers = separate_odd_even(numbers)
+print("Odd numbers:", odd_numbers)
+print("Even numbers:", even_numbers)
+
