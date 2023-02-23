@@ -103,3 +103,14 @@ num1 = 10
 num2 = 5
 num3 = 7
 find_smallest(num1, num2, num3)
+
+#Write a function that given a list of numbers, it will return new list of numbers only displaying one time each element. Example: list (1,1,1,2,2,3,3,5,6) new list (1,2,3,5,6)
+
+def remove_duplicates(numbers):
+    unique_numbers = list(set(numbers))
+    return unique_numbers
+
+
+numbers = [1, 1, 1, 2, 2, 3, 3, 5, 6]
+unique_numbers = remove_duplicates(numbers)
+print(unique_numbers)
