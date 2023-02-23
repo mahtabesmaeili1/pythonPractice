@@ -91,3 +91,15 @@ for char in string:
         counterA += 1
 
 print("The number of iterations of letter A is:", counterA)
+
+
+#write a function that will fin the minimum of 3 numbers and display the following message "The smallest number is: " + maxNumber.
+
+def find_smallest(num1, num2, num3):
+    smallest = min(num1, num2, num3)
+    print("The smallest number is:", smallest)
+
+num1 = 10
+num2 = 5
+num3 = 7
+find_smallest(num1, num2, num3)
