@@ -68,3 +68,13 @@ string = "mahtab"
 
 inverse_string = reverse_string(string)
 print("The inverse version of the string is:", inverse_string)
+
+
+#write a function that will divide 2 numbers, use an anonymous function for this. And display a message with the result. num1/num2
+
+def divide_numbers(num1, num2):
+    result = (lambda x, y: x / y)(num1, num2)
+    print("The result of dividing", num1, "by", num2, "is:", result)
+num1 = 10
+num2 = 5
+divide_numbers(num1, num2)
