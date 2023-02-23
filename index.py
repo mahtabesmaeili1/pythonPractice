@@ -78,3 +78,16 @@ def divide_numbers(num1, num2):
 num1 = 10
 num2 = 5
 divide_numbers(num1, num2)
+
+
+
+#write a program that will count the number of letters "a" in a string, after show the following message "The number of iterations of letter A is: " + counterA.
+
+string = input("Enter a string: ")
+
+counterA = 0
+for char in string:
+    if char == "a" or char == "A":
+        counterA += 1
+
+print("The number of iterations of letter A is:", counterA)
